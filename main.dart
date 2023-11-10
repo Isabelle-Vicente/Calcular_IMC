@@ -38,21 +38,21 @@ class _IMCState extends State<IMC> {
 
   String _calcularCategoriaIMC(double imc, String sexo) {
     if (sexo == 'Masculino') {
-      if (imc < 18.5) {
+      if (imc < 20.7) {
         return 'Baixo peso';
-      } else if (imc >= 18.5 && imc < 24.9) {
+      } else if (imc >= 20.7 && imc < 27.8) {
         return 'Peso normal';
-      } else if (imc >= 25 && imc < 29.9) {
+      } else if (imc >= 27.9 && imc < 31.2) {
         return 'Sobrepeso';
       } else {
         return 'Obeso';
       }
     } else {
-      if (imc < 18.5) {
+      if (imc < 19.1) {
         return 'Baixo peso';
-      } else if (imc >= 18.5 && imc < 24.9) {
+      } else if (imc >= 19.1 && imc < 25.8) {
         return 'Peso normal';
-      } else if (imc >= 25 && imc < 29.9) {
+      } else if (imc >= 27.4 && imc < 32.3) {
         return 'Sobrepeso';
       } else {
         return 'Obeso';
